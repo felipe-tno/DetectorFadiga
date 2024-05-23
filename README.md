@@ -46,7 +46,11 @@ Se você deseja contribuir para o projeto, por favor, abra um ticket de issues e
 
 Este projeto é licenciado sob a licença MIT. Você pode usar, modificar e distribuir o código sob as condições da licença.
 
-**Contato**
+**Equipe**
 ----------
+Felipe Tavares
+Felipe Seda
+Felipe Filgueiras
+Gabriel Rosa
+Giovana Amaral
 
-Se você tiver alguma pergunta ou precisar de ajuda, por favor, contate-me em [seu e-mail] ou [seu link de contato].
