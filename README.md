@@ -48,9 +48,5 @@ Este projeto é licenciado sob a licença MIT. Você pode usar, modificar e dist
 
 **Equipe**
 ----------
-Felipe Tavares
-Felipe Seda
-Felipe Filgueiras
-Gabriel Rosa
-Giovana Amaral
+Felipe Tavares, Felipe Seda, Felipe Filgueiras, Gabriel Rosa e Giovana Amaral
 
