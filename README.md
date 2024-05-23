@@ -36,16 +36,6 @@ O Detector de Fadiga é um aplicativo móvel desenvolvido para Android que utili
 * Google Play Services (versão 17.0.0 ou superior)
 * MediaPipe (versão 0.9.0 ou superior)
 
-**Contribuição**
-----------------
-
-Se você deseja contribuir para o projeto, por favor, abra um ticket de issues e explique sua sugestão ou problema. Obrigado pela sua contribuição!
-
-**Licença**
----------
-
-Este projeto é licenciado sob a licença MIT. Você pode usar, modificar e distribuir o código sob as condições da licença.
-
 **Equipe**
 ----------
 Felipe Tavares, Felipe Seda, Felipe Filgueiras, Gabriel Rosa e Giovana Amaral
