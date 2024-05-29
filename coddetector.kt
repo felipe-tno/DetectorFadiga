@@ -101,6 +101,7 @@ class OverlayView(context: Context?, attrs: AttributeSet?) :
 
                 if (x >= minX && x <= maxX && y >= minY && y <= maxY) {
                     triggerAlarm()
+                    println("CU PELUDO")
                     break
                 }
             }
