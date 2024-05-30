@@ -1,42 +1,38 @@
-**Detector de Fadiga - Android App**
-===============================
+# MediaPipe Tasks Face Landmark Detection Android Demo
 
-**Sobre o projeto**
-----------------
+### Overview
 
-O Detector de Fadiga é um aplicativo móvel desenvolvido para Android que utiliza tecnologia de Machine Learning e MediaPipe para detectar a fadiga em motoristas em tempo real. O app monitora as coordenadas do olho e da boca do motorista utilizando a câmera do dispositivo, e emite alertas quando detecta sinais de cansaço.
+This is a camera app that can  detects face landmarks either from continuous camera frames seen by your device's front camera, an image, or a video from the device's gallery using a custom **task** file.
 
-**Funcionalidades**
------------------
+The task file is downloaded by a Gradle script when you build and run the app. You don't need to do any additional steps to download task files into the project explicitly unless you wish to use your own landmark detection task. If you do use your own task file, place it into the app's *assets* directory.
 
-* Monitoramento das coordenadas do olho e boca do motorista utilizando MediaPipe
-* Análise das coordenadas para detectar sinais de fadiga
-* Emite alertas de fadiga para o motorista
-* Possibilidade de configuração de parâmetros para ajustar o detector de fadiga
+This application should be run on a physical Android device to take advantage of the camera.
 
-**Tecnologias utilizadas**
--------------------------
+## Build the demo using Android Studio
 
-* Android Studio
-* MediaPipe (biblioteca de Machine Learning da Google)
-* Java (linguagem de programação)
-* Kotlin (linguagem de programação)
+### Prerequisites
 
-**Como usar**
--------------
+*   The **[Android Studio](https://developer.android.com/studio/index.html)** IDE. This sample has been tested on Android Studio Dolphin.
 
-1. Baixe o app no Google Play Store
-2. Instale o app no seu dispositivo Android
-3. Configure o app com seus dados e preferências
-4. Inicie o monitoramento e aguarde as análises da fadiga
+*   A physical Android device with a minimum OS version of SDK 24 (Android 7.0 -
+    Nougat) with developer mode enabled. The process of enabling developer mode
+    may vary by device.
 
-**Dependências**
-----------------
+### Building
 
-* Google Play Services (versão 17.0.0 ou superior)
-* MediaPipe (versão 0.9.0 ou superior)
+*   Open Android Studio. From the Welcome screen, select Open an existing
+    Android Studio project.
 
-**Equipe**
-----------
-Felipe Tavares, Felipe Seda, Felipe Filgueiras, Gabriel Rosa e Giovana Amaral
+*   From the Open File or Project window that appears, navigate to and select
+    the mediapipe/examples/face_landmarker/android directory. Click OK. You may
+    be asked if you trust the project. Select Trust.
 
+*   If it asks you to do a Gradle Sync, click OK.
+
+*   With your Android device connected to your computer and developer mode
+    enabled, click on the green Run arrow in Android Studio.
+
+### Models used
+
+Downloading, extraction, and placing the models into the *assets* folder is
+managed automatically by the **download.gradle** file.
