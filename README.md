@@ -1,38 +1,74 @@
-# MediaPipe Tasks Face Landmark Detection Android Demo
+# Monitoramento de Fadiga para Motoristas de Caminhão
 
-### Overview
+Este projeto Android Studio foi desenvolvido em Kotlin e utiliza a biblioteca MediaPipe para detectar pontos faciais de um motorista de caminhão enquanto ele estiver com a câmera do celular apontada para o rosto. O aplicativo monitora sinais de fadiga e envia um alerta ao detectar indícios de cansaço, recomendando que o motorista estacione o caminhão e pare de dirigir para evitar acidentes.
 
-This is a camera app that can  detects face landmarks either from continuous camera frames seen by your device's front camera, an image, or a video from the device's gallery using a custom **task** file.
+## Funcionalidades
 
-The task file is downloaded by a Gradle script when you build and run the app. You don't need to do any additional steps to download task files into the project explicitly unless you wish to use your own landmark detection task. If you do use your own task file, place it into the app's *assets* directory.
+- **Detecção Facial:** Utiliza a biblioteca MediaPipe para detectar pontos faciais.
+- **Monitoramento de Fadiga:** Analisa os pontos faciais para identificar sinais de fadiga.
+- **Alerta de Fadiga:** Envia uma notificação ao motorista sugerindo que ele pare de dirigir ao detectar sinais de fadiga.
 
-This application should be run on a physical Android device to take advantage of the camera.
+## Tecnologias Utilizadas
 
-## Build the demo using Android Studio
+- **Kotlin:** Linguagem principal para o desenvolvimento do aplicativo.
+- **Android Studio:** IDE utilizada para o desenvolvimento do projeto.
+- **MediaPipe:** Biblioteca utilizada para a detecção de pontos faciais.
 
-### Prerequisites
+## Instalação
 
-*   The **[Android Studio](https://developer.android.com/studio/index.html)** IDE. This sample has been tested on Android Studio Dolphin.
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+2. **Abra o projeto no Android Studio:**
+   - Selecione "Open an existing Android Studio project".
+   - Navegue até o diretório onde você clonou o repositório e selecione-o.
 
-*   A physical Android device with a minimum OS version of SDK 24 (Android 7.0 -
-    Nougat) with developer mode enabled. The process of enabling developer mode
-    may vary by device.
+3. **Configure o projeto:**
+   - Certifique-se de que todas as dependências estão corretamente instaladas.
+   - Sincronize o projeto com o Gradle.
 
-### Building
+4. **Execute o aplicativo:**
+   - Conecte um dispositivo Android ou use um emulador.
+   - Clique em "Run" no Android Studio.
 
-*   Open Android Studio. From the Welcome screen, select Open an existing
-    Android Studio project.
+## Uso
 
-*   From the Open File or Project window that appears, navigate to and select
-    the mediapipe/examples/face_landmarker/android directory. Click OK. You may
-    be asked if you trust the project. Select Trust.
+1. **Inicialização:**
+   - Ao abrir o aplicativo, a câmera frontal do dispositivo será ativada.
+   - O aplicativo começará a detectar pontos faciais automaticamente.
 
-*   If it asks you to do a Gradle Sync, click OK.
+2. **Monitoramento:**
+   - O aplicativo monitora os sinais de fadiga analisando a abertura dos olhos e a posição da cabeça.
+   - Se sinais de fadiga forem detectados, uma notificação será enviada.
 
-*   With your Android device connected to your computer and developer mode
-    enabled, click on the green Run arrow in Android Studio.
+3. **Alerta:**
+   - A notificação irá sugerir que o motorista pare o caminhão em um local seguro e descanse.
 
-### Models used
+## Contribuição
 
-Downloading, extraction, and placing the models into the *assets* folder is
-managed automatically by the **download.gradle** file.
+1. **Fork o projeto.**
+2. **Crie uma nova branch:**
+   ```bash
+   git checkout -b minha-nova-funcionalidade
+   ```
+3. **Faça as alterações desejadas e commit:**
+   ```bash
+   git commit -m "Adiciona minha nova funcionalidade"
+   ```
+4. **Envie para o branch original:**
+   ```bash
+   git push origin minha-nova-funcionalidade
+   ```
+5. **Crie um Pull Request.**
+
+
+## Contato
+
+- **Desenvolvedores:** Felipe Tavares, Felipe Filgueiras, Gabriel Rosa, Felipe Seda e Giovanna Amaral.
+
+Sinta-se à vontade para enviar sugestões, reportar bugs ou contribuir com o projeto!
+
+---
+
+Agradecemos por utilizar nosso aplicativo e contribuir para a segurança nas estradas.
